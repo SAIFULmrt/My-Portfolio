@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md. Saiful Islam</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a2700fa8cc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- ===== Header Section ===== -->
+  <header id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo3.gif" alt="Logo" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+      <div class="header-text">
+        <h1>Hi, I'm <span>Saiful</span><br>From Bangladesh</h1>
+        <br>
+        <h4>
+          <span>Flutter Developer</span><br>
+          <span>Java & SQL Programmer</span><br>
+          <span>Python Developer & AI Researcher</span><br>
+          <span>Full Stack Web & DApp Developer (React, Node, PostgreSQL, Web3)</span>
+        </h4>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== About Section ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/img1.png" alt="Profile Picture">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About <span>Me</span></h1>
+          <p>
+            A Computer Science Engineering graduate from North South University, Bangladesh, 
+            with a strong commitment to exploring the capabilities and ethical implications of AI,
+            machine learning and Java development.
+            <br><br>
+            My research focuses on QA-type AI projects, data analysis and Java development.
+            Using platforms like Kaggle and Google Colab, I’ve gained expertise in data manipulation, 
+            model development, and NLP problem-solving. I’ve also worked on Java projects 
+            related to web and Android development.
+            <br><br>
+            I aspire to join an organization where I can contribute to growth while sharpening my skills.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('Tools')">Tools</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="Education">
+            <ul>
+              <li><span>North South University (2019-2023)</span><br>BSc in Computer Science</li>
+              <li><span>Shaheed Police Smrity College (2016-2018)</span><br>Higher Secondary Certificate</li>
+              <li><span>Nahar Academy High School (2013-2015)</span><br>Secondary School Certificate</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="Experience">
+            <ul>
+              <li><span>Researcher (May 2023 - Present)</span><br>NLP, AI Hallucination, Bias Mitigation</li>
+              <li><span>Application Developer</span><br>Built apps to bridge info gaps for ASD children</li>
+              <li><span>Executive Member (Sep 2021 - June 2023)</span><br>IT & Creative Design, Right To Peace</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="Skills">
+            <ul>
+              <li><span>Research</span><br>Data Integrity, Low-Resource Environments, AI Reliability</li>
+              <li><span>App Development</span><br>Building Web & Android Apps</li>
+              <li><span>Leadership</span><br>Managing young, enthusiastic teams</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="Tools">
+            <ul>
+              <li><span>Languages</span><br>C, Java, Python, Dart, SQL, HTML, CSS, JavaScript</li>
+              <li><span>Frameworks</span><br>PyTorch, JavaFX</li>
+              <li><span>Others</span><br>Numpy, Pandas, Seaborn, Hugging Face, Git, LaTeX</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services Section ===== -->
+  <section id="services">
+    <div class="container">
+      <h1 class="sub-title">Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Research</h2>
+          <p>On-going research in NLP, LLMs, and Quantum Computing.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Development</h2>
+          <p>Developed multiple mobile and web applications. Skilled with frameworks and ML tools.</p>
+          <a href="https://github.com/SAIFULmrt">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-handshake-angle"></i>
+          <h2>Volunteer</h2>
+          <p>Started as volunteer at Right To Peace, later promoted to IT Wing Leader.</p>
+          <a href="https://www.facebook.com/mrt.saiful">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Portfolio Section ===== -->
+  <section id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">Projects and Workshops</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/498RsrcDataset.JPG" alt="Thesis">
+          <div class="layer">
+            <h3>Thesis</h3>
+            <p>Towards Accurate AI-Driven Historical QA: A Retrieval-Augmented Model for Bangladeshi History</p>
+            <p><em>Link will be provided soon!</em></p>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/MobilePricePrediction.png" alt="ML Project">
+          <div class="layer">
+            <h3>Mobile Price Prediction</h3>
+            <p>AI project linked to a web app that predicts approximate phone prices.</p>
+            <p><em>Link will be provided soon!</em></p>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/wecare3.png" alt="Mobile App">
+          <div class="layer">
+            <h3>WeCare Mobile App</h3>
+            <p>Android app providing school, doctor, and NGO support for ASD children.</p>
+            <p><em>Link will be provided soon!</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Find Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> mrt.saiful@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> 01919981999</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/mrt.saiful"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/saifulmrt/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/SAIFULmrt"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="images/Md. Saiful Islam.pdf" download class="btn btn2">Download CV</a>
+        </div>
+
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; Md. Saiful Islam</p>
+    </div>
+  </section>
+
+  <!-- ===== JavaScript ===== -->
+  <script>
+    // Tab switching
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (let tablink of tablinks) tablink.classList.remove("active-link");
+      for (let tabcontent of tabcontents) tabcontent.classList.remove("active-tab");
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    // Mobile menu
+    const sidemenu = document.getElementById("sidemenu");
+    function openmenu() { sidemenu.style.right = "0"; }
+    function closemenu() { sidemenu.style.right = "-200px"; }
+
+    // Form submission
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyFQs9-y84N4cQDB7tfVPR2Fj1_VuhXC73UDyFXFCAIGMhxPcmqo_00p7swhwAPGrze/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(() => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(() => msg.innerHTML = "", 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
